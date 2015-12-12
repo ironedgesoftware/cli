@@ -1,0 +1,27 @@
+#!/usr/bin/env php
+<?php
+
+/*
+ * This file is part of Cliched.
+ *
+ * (c) Gustavo Falco <comfortablynumb84@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+if (PHP_SAPI !== 'cli') {
+    echo 'Cliched must be executed from the CLI SAPI, not the '.PHP_SAPI.' SAPI'.PHP_EOL;
+
+    exit(1);
+}
+
+require __DIR__.'/../autoload.php';
+
+use IronEdge\Component\Cliched\Console\Application;
+
+// run the command application
+
+$application = new Application();
+
+$application->run();
