@@ -18,7 +18,7 @@ if (PHP_SAPI !== 'cli') {
 
 require __DIR__.'/../autoload.php';
 
-use IronEdge\Component\Cliched\Console\Application;
+use \IronEdge\Component\Cliched\Console\Application;
 
 // run the command application
 

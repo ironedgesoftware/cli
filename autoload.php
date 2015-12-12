@@ -18,7 +18,7 @@ $loader = null;
 
 foreach ($autoloaders as $autoloadFile) {
     if (is_file($autoloadFile)) {
-        $loader = $autoloadFile;
+        $loader = require_once $autoloadFile;
 
         break;
     }
