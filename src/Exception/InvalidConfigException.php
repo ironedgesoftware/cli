@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the frenzy-framework package.
+ * This file is part of the cli package.
  *
  * (c) Gustavo Falco <comfortablynumb84@gmail.com>
  *
@@ -15,7 +15,12 @@ namespace IronEdge\Component\Cli\Exception;
 /*
  * @author Gustavo Falco <comfortablynumb84@gmail.com>
  */
-class BaseException extends \Exception
+class InvalidConfigException extends BaseException
 {
-
+    public static function create($name, $type, $msg = null)
+    {
+        return new self(
+            $msg ? $msg : 'Invalid cli config "'.$name.'". It must be '.$type
+        );
+    }
 }

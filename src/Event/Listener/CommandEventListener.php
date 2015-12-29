@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the frenzy-framework package.
+ * This file is part of the cli package.
  *
  * (c) Gustavo Falco <comfortablynumb84@gmail.com>
  *
@@ -11,12 +11,11 @@
 
 namespace IronEdge\Component\Cli\Event\Listener;
 
+use Symfony\Component\Console\Event\ConsoleCommandEvent;
 
 /*
  * @author Gustavo Falco <comfortablynumb84@gmail.com>
  */
-use Symfony\Component\Console\Event\ConsoleCommandEvent;
-
 class CommandEventListener
 {
     public function onConsoleCommand(ConsoleCommandEvent $event)

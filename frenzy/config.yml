@@ -1,0 +1,10 @@
+application:
+  name:     Default Application
+  version:  0.1
+
+commands: []
+
+components:
+  ironedge/kernel:
+    config:
+      processorClass: \IronEdge\Component\Cli\Config\Processor

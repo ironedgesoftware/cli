@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the frenzy-framework package.
+ * This file is part of the cli package.
  *
  * (c) Gustavo Falco <comfortablynumb84@gmail.com>
  *
@@ -15,7 +15,7 @@ namespace IronEdge\Component\Cli\Exception;
 /*
  * @author Gustavo Falco <comfortablynumb84@gmail.com>
  */
-class BaseException
+class BaseException extends \Exception
 {
 
 }
