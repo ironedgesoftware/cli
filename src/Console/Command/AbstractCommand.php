@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of Cliched.
+ * This file is part of the frenzy-framework package.
  *
  * (c) Gustavo Falco <comfortablynumb84@gmail.com>
  *
@@ -11,18 +11,13 @@
 
 namespace IronEdge\Component\Cliched\Console;
 
-use Symfony\Component\Console\Application as BaseApplication;
 
-/**
- * Console Application class.
- *
+/*
  * @author Gustavo Falco <comfortablynumb84@gmail.com>
  */
-class Application extends BaseApplication
+use Symfony\Component\Console\Command\Command;
+
+abstract class AbstractCommand extends Command
 {
-    public function __construct()
-    {
-        parent::__construct('cliched', '0.1');
-    }
 
 }

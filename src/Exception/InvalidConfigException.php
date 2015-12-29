@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of Cliched.
+ * This file is part of the frenzy-framework package.
  *
  * (c) Gustavo Falco <comfortablynumb84@gmail.com>
  *
@@ -9,15 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace IronEdge\Component\Cliched;
+namespace IronEdge\Component\Cli\Exception;
 
 
-/**
- * Cliched Main class
- *
+/*
  * @author Gustavo Falco <comfortablynumb84@gmail.com>
  */
-class Cliched
+class BaseException extends \Exception
 {
 
 }
