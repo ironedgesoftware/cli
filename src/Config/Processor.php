@@ -37,7 +37,7 @@ class Processor implements ProcessorInterface
 
         if (isset($registeredConfig['commands'])) {
             if (!is_array($registeredConfig['commands'])) {
-                throw InvalidConfigException::create('commands', 'It must be an array of commands configurations.');
+                throw InvalidConfigException::create('commands', 'an array of commands configurations.');
             }
 
             $config->merge('components.ironedge/cli.commands', $registeredConfig['commands'], []);

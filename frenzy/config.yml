@@ -7,4 +7,5 @@ commands: []
 components:
   ironedge/kernel:
     config:
-      processorClass: \IronEdge\Component\Cli\Config\Processor
+      processor:
+        class: \IronEdge\Component\Cli\Config\Processor
